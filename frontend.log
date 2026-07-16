@@ -1,0 +1,13 @@
+
+> dog-breed-frontend@1.0.0 dev
+> vite --host 0.0.0.0 --port 3000
+
+Port 3000 is in use, trying another one...
+Port 3001 is in use, trying another one...
+
+  VITE v5.4.21  ready in 272 ms
+
+  ➜  Local:   http://localhost:3002/
+  ➜  Network: http://192.168.1.98:11:00:51 PM [vite] page reload src/App.jsx
+2/
+  ➜  Network: http://172.25.0.1:3002/

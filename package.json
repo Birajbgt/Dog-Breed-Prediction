@@ -1,0 +1,11 @@
+{
+  "name": "dog-breed-project",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "bash ./start-dev.sh",
+    "backend": "if ss -ltn | awk '{print $4}' | grep -qE '(^|:)(8000)$'; then echo 'Backend already running on http://127.0.0.1:8000'; else source .venv/bin/activate && uvicorn api:app --host 0.0.0.0 --port 8000; fi",
+    "frontend": "if ss -ltn | awk '{print $4}' | grep -qE '(^|:)(3000)$'; then echo 'Frontend already running on http://127.0.0.1:3000'; else cd frontend && npm run dev -- --host 0.0.0.0 --port 3000; fi",
+    "dev": "bash ./start-dev.sh"
+  }
+}
